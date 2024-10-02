@@ -1,0 +1,1 @@
+python -m llava.serve.gradio_web_server --controller http://0.0.0.0:10000 --model-list-mode reload

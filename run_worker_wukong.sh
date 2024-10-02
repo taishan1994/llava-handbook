@@ -1,0 +1,1 @@
+python -m llava.serve.model_worker --host 0.0.0.0 --controller http://0.0.0.0:10000 --port 40000 --worker http://0.0.0.0:40000 --model-path /data/gongoubo/VQA/LLaVA/checkpoints/llava-v1.5-7b-merge
