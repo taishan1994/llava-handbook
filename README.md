@@ -4,7 +4,7 @@
 # 可视化部署
 
 ```shell
-git clone https://github.com/haotian-liu/LLaVA.git
+git clone https://github.com/haotian-liu/LLaVA.githttps://github.com/taishan1994/llava-handbook/blob/main/README.md
 cd LLaVA
 conda create -n llava python=3.10 -y
 conda activate llava
@@ -683,8 +683,8 @@ print(decoded_output)
 
 说明：
 
-- 将<image>作为特殊token加入的词表里面。
-- 数据预处理的时候先将带有<image>token的文本用tokenizer编码成Input_ids，然后再用文本编码器转换为text_embedding。然后将图片用clip编码成image_embedding，再将Image_embedding的维度用projector映射成text_embedding的维度，再将text_embedding用<image>的索引进行分割，将image_embedding插入到分割后的embedding的中间，拼接成带有图片embedding的文本embedding输入给语言模型进行回答即可。
+- 将`<image>`作为特殊token加入的词表里面。
+- 数据预处理的时候先将带有`<image>`的文本用tokenizer编码成Input_ids，然后再用文本编码器转换为text_embedding。然后将图片用clip编码成image_embedding，再将Image_embedding的维度用projector映射成text_embedding的维度，再将text_embedding用<image>的索引进行分割，将image_embedding插入到分割后的embedding的中间，拼接成带有图片embedding的文本embedding输入给语言模型进行回答即可。
 
 # 补充
 
